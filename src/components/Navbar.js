@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link,NavLink} from 'react-router-dom'
 
 const Navbar=()=>{
 
@@ -9,9 +10,9 @@ const Navbar=()=>{
                     poke Time
                 </a>
                 <ul className='right'>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">conatc</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><NavLink to="/about">About</NavLink></li>
+                    <li><NavLink to="/contact">conatc</NavLink></li>
                     
                 </ul>
             </div>
